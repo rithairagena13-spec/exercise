@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRO Equipment Portal — Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <main class="login-wrapper">
+    <section class="login-card">
+      <!-- Brand Header -->
+      <header class="brand-header">
+        <img src="assets/iro-logo.png" alt="Igire Rwanda Organization Logo" class="brand-logo" />
+        <h1>SheCanCODE Equipment Portal</h1>
+        <p>Sign in to manage training laptops and graduation gowns</p>
+      </header>
+
+      <!-- Login Form -->
+      <form class="login-form" action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@igirerwanda.org"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-primary">Sign In</button>
+      </form>
+
+      <!-- Footer Note -->
+      <footer class="card-footer">
+        <p>Igire Rwanda Organization &bull; Kacyiru Hub, Kigali</p>
+      </footer>
+    </section>
+  </main>
 </body>
 </html>
