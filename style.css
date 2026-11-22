@@ -1,0 +1,136 @@
+/* Strictly 3 Brand Colors: Forest Green, Golden Orange, Soft Warm Off-White */
+:root {
+  --color-green: #143D23;
+  --color-orange: #B7791F;
+  --color-bg: #FAF9F6;
+  --color-border: rgba(20, 61, 35, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-green);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-card {
+  background-color: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-top: 5px solid var(--color-orange);
+  border-radius: 10px;
+  padding: 2.25rem 2rem;
+}
+
+/* Header & Logo */
+.brand-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.brand-logo {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.brand-header h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin-bottom: 0.35rem;
+}
+
+.brand-header p {
+  font-size: 0.9rem;
+  color: var(--color-green);
+  opacity: 0.8;
+}
+
+/* Form Elements */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--color-green);
+  background-color: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: var(--color-green);
+  opacity: 0.45;
+}
+
+.form-group input:focus {
+  border-color: var(--color-orange);
+}
+
+/* Golden Orange Primary Button */
+.btn-primary {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-bg);
+  background-color: var(--color-orange);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+/* Footer */
+.card-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.card-footer p {
+  font-size: 0.8rem;
+  color: var(--color-green);
+  opacity: 0.75;
+}
